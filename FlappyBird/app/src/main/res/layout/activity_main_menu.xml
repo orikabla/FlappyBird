@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/statsFragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Play"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/menu_button"
+        app:cornerRadius="25dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        app:rippleColor="@android:color/transparent" />
+
+
+
+<ImageButton
+    android:id="@+id/settingsButton"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/menu_button"
+    android:src="@drawable/settings_gear"
+    android:padding="12dp"
+    android:contentDescription="Settings"
+    android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/playButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Leaderboard"
+        android:textSize="21sp"
+        android:background="@drawable/menu_button"
+        android:textColor="#FFFFFF"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+
+        />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/leaderboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:textSize="21sp"
+        android:background="@drawable/menu_button"
+        android:textColor="#FFFFFF"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        />
+
+    <com.example.flappybird.MenuBirdView
+        android:id="@+id/menuBird"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Flappy Bird"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"/>
+
+    <FrameLayout
+        android:id="@+id/statsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

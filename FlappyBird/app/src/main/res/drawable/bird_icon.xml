@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <group
+        android:rotation="-30"
+        android:pivotX="100"
+        android:pivotY="100">
+
+        <!-- Body (Oval) -->
+        <path
+            android:name="body"
+            android:fillColor="#FFB000"
+            android:pathData="M50,100 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0" />
+
+        <!-- Eye white (20% of body radius) -->
+        <path
+            android:name="eye_white"
+            android:fillColor="#FFFFFF"
+            android:pathData="M115,90 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+
+        <!-- Pupil (50% of eye radius) -->
+        <path
+            android:name="pupil"
+            android:fillColor="#000000"
+            android:pathData="M120,90 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+
+        <!-- Beak (shorter length) -->
+        <path
+            android:name="beak"
+            android:fillColor="#FF6B00"
+            android:pathData="M135,95 h30 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-30 a4,4 0 0 1 -4,-4 v-12 a4,4 0 0 1 4,-4 z" />
+    </group>
+</vector>
